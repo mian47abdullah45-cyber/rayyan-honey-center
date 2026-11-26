@@ -3,420 +3,533 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rayyan Honey Center | Natural Honey</title>
-<meta name="description" content="Explore White Honey, Black Honey, Param Honey and Original Honey at Rayyan Honey Center, Swat, Pakistan.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rayyan Honey Center | Swat Pakistan</title>
+<meta name="description" content="Discover the honey collection at Rayyan Honey Center, Swat, Pakistan. Contact us for orders and availability.">
+
 <style>
 :root {
-  --cream: #fff9ee;
-  --gold: #c18a36;
-  --brown: #392319;
-  --dark: #201711;
-  --muted: #74665b;
-  --white: #ffffff;
+  --forest:#102719;
+  --forest2:#1b3c27;
+  --gold:#f3b52f;
+  --cream:#fff5df;
+  --ink:#21180e;
+  --white:#fff;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--cream);
-  color: var(--brown);
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:#f8f0df;
 }
-a { text-decoration: none; }
-.topbar {
-  background: var(--dark);
-  color: #f7dfad;
-  text-align: center;
-  padding: 10px 14px;
-  font-size: 13px;
-  letter-spacing: 1px;
+a { text-decoration:none; }
+img { display:block; max-width:100%; }
+.topline {
+  padding:10px 5%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:8px;
+  color:#fff0c5;
+  background:#101b12;
+  font-size:13px;
 }
 header {
-  background: rgba(255,249,238,.97);
-  padding: 17px 6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border-bottom: 1px solid #eadcc8;
+  position:sticky;
+  top:0;
+  z-index:10;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:15px 5%;
+  background:rgba(255,248,230,.97);
+  border-bottom:2px solid var(--gold);
 }
-.logo {
-  font-family: Georgia, serif;
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: -.5px;
+.brand {
+  font-family:Georgia,serif;
+  font-size:clamp(21px,3vw,32px);
+  font-weight:bold;
+  line-height:1.05;
+  color:var(--forest);
 }
-.logo span { color: var(--gold); }
-nav { display: flex; gap: 24px; flex-wrap: wrap; }
-nav a { color: var(--brown); font-size: 14px; font-weight: bold; }
-nav a:hover { color: var(--gold); }
+.brand span { color:#bd7e13; }
+nav { display:flex; gap:20px; flex-wrap:wrap; align-items:center; }
+nav a { font-size:14px; font-weight:bold; color:var(--forest); }
+nav a:hover { color:#bd7e13; }
+.btn {
+  display:inline-block;
+  padding:13px 22px;
+  border-radius:30px;
+  background:var(--gold);
+  color:#21180e;
+  font-size:14px;
+  font-weight:bold;
+  border:0;
+  cursor:pointer;
+  box-shadow:0 4px 12px #0002;
+  transition:.2s;
+}
+.btn:hover { transform:translateY(-2px); filter:brightness(1.06); }
+.btn-green { background:#287746; color:white; }
 .hero {
-  min-height: 560px;
-  display: flex;
-  align-items: center;
-  padding: 75px 7%;
-  color: white;
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  padding:70px 7%;
+  color:white;
   background:
-    linear-gradient(90deg, rgba(25,16,10,.90), rgba(35,22,13,.66), rgba(35,22,13,.12)),
-    url("https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=2000&q=85")
+    linear-gradient(90deg,rgba(7,23,12,.91),rgba(9,28,15,.72),rgba(8,20,10,.12)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2000&q=85")
     center/cover no-repeat;
 }
-.hero-content { max-width: 640px; }
-.eyebrow {
-  color: #f2ca7b;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+.hero-inner { max-width:660px; }
+.kicker {
+  color:var(--gold);
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
 }
 .hero h1 {
-  font-family: Georgia, serif;
-  font-size: clamp(42px, 6vw, 76px);
-  line-height: 1.05;
-  margin: 18px 0;
+  margin:16px 0;
+  font-family:Georgia,serif;
+  font-size:clamp(43px,7vw,82px);
+  line-height:1.02;
 }
-.hero h1 span { color: #f2c66f; }
+.hero h1 span { color:var(--gold); }
 .hero p {
-  color: #f5e9dc;
-  font-size: 17px;
-  line-height: 1.8;
-  max-width: 520px;
+  max-width:540px;
+  line-height:1.8;
+  font-size:17px;
+  color:#f5eddd;
 }
-.btn {
-  display: inline-block;
-  padding: 14px 24px;
-  margin: 12px 8px 0 0;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 14px;
-  transition: .2s;
+.hero .btn { margin:10px 8px 0 0; }
+.trustbar {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  padding:22px 5%;
+  background:var(--forest);
+  color:white;
+  border-top:2px solid var(--gold);
+  border-bottom:2px solid var(--gold);
 }
-.btn-gold { background: #d5a34d; color: #26170c; }
-.btn-light { border: 1px solid #fff0d3; color: white; }
-.btn:hover { transform: translateY(-2px); }
-.section { padding: 75px 7%; }
-.section-heading { text-align: center; margin-bottom: 38px; }
-.section-heading small {
-  color: var(--gold);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
+.trust-item { text-align:center; padding:8px; }
+.trust-item b { display:block; color:var(--gold); margin-bottom:6px; }
+.trust-item span { font-size:13px; }
+.section { padding:75px 6%; }
+.section-head { text-align:center; margin:0 auto 38px; max-width:720px; }
+.section-head small { color:#a46c13; letter-spacing:3px; font-weight:bold; }
+.section-head h2 {
+  font: bold clamp(30px,4vw,46px) Georgia,serif;
+  color:var(--forest);
+  margin:12px 0;
 }
-.section-heading h2 {
-  font: bold clamp(30px, 4vw, 44px) Georgia, serif;
-  margin: 12px 0;
-}
-.section-heading p { color: var(--muted); line-height: 1.7; }
-.products {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 22px;
+.section-head p { line-height:1.8; color:#706354; }
+.product-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:22px;
 }
 .product {
-  background: white;
-  border: 1px solid #eadcc8;
-  overflow: hidden;
-  border-radius: 9px;
-  box-shadow: 0 8px 24px rgba(62,38,18,.06);
-  transition: transform .25s, box-shadow .25s;
+  overflow:hidden;
+  background:white;
+  border-radius:14px;
+  border:1px solid #e6d4ae;
+  box-shadow:0 8px 25px #3b2b1512;
+  transition:transform .25s,box-shadow .25s;
 }
 .product:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 32px rgba(62,38,18,.12);
+  transform:translateY(-6px);
+  box-shadow:0 15px 30px #3b2b1522;
 }
-.product-image {
-  height: 255px;
-  background: #eee1cc;
-  overflow: hidden;
+.product-photo {
+  height:260px;
+  background:#e8d8b7;
+  overflow:hidden;
 }
-.product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform .35s;
+.product-photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .35s;
 }
-.product:hover .product-image img { transform: scale(1.04); }
-.product-info { padding: 22px 19px; }
-.product-info h3 {
-  font: bold 24px Georgia, serif;
-  margin: 0 0 8px;
+.product:hover .product-photo img { transform:scale(1.05); }
+.product-body { padding:20px; }
+.tag {
+  display:inline-block;
+  padding:6px 10px;
+  background:#f8e8c3;
+  color:#77500e;
+  font-size:11px;
+  font-weight:bold;
+  border-radius:20px;
 }
-.product-info p {
-  font-size: 13px;
-  line-height: 1.65;
-  color: var(--muted);
-  min-height: 42px;
+.product h3 {
+  font: bold 25px Georgia,serif;
+  color:var(--forest);
+  margin:12px 0 8px;
+}
+.product p {
+  color:#706354;
+  font-size:13px;
+  line-height:1.7;
+  min-height:44px;
 }
 .price {
-  color: #9b6720;
-  font-size: 22px;
-  font-weight: bold;
-  margin: 17px 0;
+  margin:17px 0;
+  color:#98620d;
+  font-size:22px;
+  font-weight:bold;
 }
-.price small { font-size: 12px; color: var(--muted); font-weight: normal; }
-.order-btn {
-  display: block;
-  text-align: center;
-  background: #3d6d45;
-  color: white;
-  padding: 12px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 13px;
+.price small { font-size:12px; color:#776b5c; font-weight:normal; }
+.product .btn { display:block; text-align:center; margin-top:10px; }
+.product .btn-secondary {
+  display:block;
+  text-align:center;
+  margin-top:9px;
+  padding:11px;
+  border:1px solid #d6c6a6;
+  border-radius:30px;
+  color:var(--forest);
+  font-size:12px;
+  font-weight:bold;
 }
-.order-btn:hover { background: #294e30; }
-.quality {
-  background: #efe3cf;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 38px 7%;
-  text-align: center;
+.product .btn-secondary:hover { background:#f9f0de; }
+.note {
+  margin:25px auto 0;
+  max-width:800px;
+  color:#756755;
+  font-size:12px;
+  text-align:center;
+  line-height:1.7;
 }
-.quality-item { padding: 10px; }
-.quality-item .symbol { font-size: 30px; margin-bottom: 10px; }
-.quality-item h3 { font: bold 20px Georgia, serif; margin: 7px; }
-.quality-item p { color: var(--muted); font-size: 13px; line-height: 1.6; }
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 48px;
-}
-.about-photo {
-  min-height: 390px;
-  border-radius: 8px;
+.jungle-band {
+  color:white;
   background:
-    linear-gradient(0deg, rgba(34,22,13,.10), rgba(34,22,13,.02)),
-    url("https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=1200&q=85")
+    linear-gradient(90deg,rgba(10,34,19,.95),rgba(10,34,19,.65)),
+    url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1800&q=85")
     center/cover no-repeat;
+  padding:70px 7%;
 }
-.about-text h2 {
-  font: bold clamp(32px, 4vw, 46px) Georgia, serif;
-  line-height: 1.15;
+.jungle-content { max-width:720px; }
+.jungle-band h2 {
+  font: bold clamp(32px,5vw,49px) Georgia,serif;
+  color:var(--gold);
+  margin:12px 0;
 }
-.about-text p { color: var(--muted); line-height: 1.9; }
-.contact {
-  background: #2b1d14;
-  color: white;
-  text-align: center;
+.jungle-band p { line-height:1.9; color:#f4ebd9; }
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:45px;
 }
-.contact .section-heading p { color: #e4d4c2; }
-.contacts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 330px));
-  justify-content: center;
-  gap: 22px;
+.about-image {
+  height:420px;
+  overflow:hidden;
+  border-radius:14px;
+  background:#d8c6a4;
+}
+.about-image img { width:100%; height:100%; object-fit:cover; }
+.about-copy h2 {
+  font: bold clamp(32px,4vw,45px) Georgia,serif;
+  color:var(--forest);
+}
+.about-copy p { color:#706354; line-height:1.9; }
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.gallery img {
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:12px;
+  border:3px solid white;
+  box-shadow:0 5px 18px #0001;
+}
+.contact-section {
+  color:white;
+  background:
+    linear-gradient(rgba(12,31,18,.95),rgba(12,31,18,.95)),
+    url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+.contact-section .section-head h2 { color:white; }
+.contact-section .section-head p { color:#e2d8c6; }
+.contact-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,330px));
+  justify-content:center;
+  gap:22px;
 }
 .contact-card {
-  background: #3a291e;
-  border: 1px solid #6c4c31;
-  border-radius: 8px;
-  padding: 28px 20px;
+  text-align:center;
+  padding:30px 20px;
+  border:1px solid #6c794f;
+  border-radius:14px;
+  background:#1b3926;
 }
-.contact-card h3 { font: bold 23px Georgia, serif; margin: 0 0 8px; }
-.contact-card p { color: #e7d4c0; margin-bottom: 22px; }
-.contact-card a {
-  display: inline-block;
-  background: #3b8a51;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 4px;
-  font-weight: bold;
+.avatar {
+  width:76px;
+  height:76px;
+  display:grid;
+  place-items:center;
+  margin:0 auto 15px;
+  border:2px solid var(--gold);
+  border-radius:50%;
+  background:#f3d9a1;
+  color:var(--forest);
+  font-size:27px;
+  font-weight:bold;
 }
+.contact-card h3 { font: bold 24px Georgia,serif; margin:10px 0; }
+.contact-card p { color:#e3d8c4; }
+.contact-card .btn { margin-top:10px; }
 footer {
-  background: #1b120d;
-  color: #d7c2ac;
-  padding: 25px 7%;
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.8;
+  padding:28px 6%;
+  background:#09150d;
+  color:#dfd1b6;
+  text-align:center;
+  line-height:1.9;
+  font-size:13px;
 }
-.floating-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 5;
-  background: #20b85a;
-  color: white;
-  border-radius: 30px;
-  padding: 14px 19px;
-  box-shadow: 0 5px 18px #0003;
-  font-weight: bold;
+footer strong { color:var(--gold); font: bold 23px Georgia,serif; }
+.wa-float {
+  position:fixed;
+  z-index:20;
+  right:18px;
+  bottom:18px;
+  padding:14px 18px;
+  border-radius:30px;
+  background:#20bd5a;
+  color:white;
+  font-weight:bold;
+  box-shadow:0 5px 20px #0003;
 }
-@media(max-width: 1000px) {
-  .products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .hero { min-height: 500px; }
+@media(max-width:1000px) {
+  .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  header { flex-wrap:wrap; }
 }
-@media(max-width: 650px) {
-  header { align-items: flex-start; flex-direction: column; }
-  nav { gap: 14px; }
-  .hero { padding: 65px 6%; min-height: 480px; }
-  .section { padding: 55px 5%; }
-  .products { grid-template-columns: 1fr; }
-  .product-image { height: 290px; }
-  .about { grid-template-columns: 1fr; gap: 20px; }
-  .about-photo { min-height: 280px; }
-  .quality { grid-template-columns: 1fr; gap: 8px; }
-  .contacts { grid-template-columns: 1fr; }
+@media(max-width:650px) {
+  .topline { justify-content:center; text-align:center; }
+  header { position:static; }
+  nav { gap:12px; }
+  nav a { font-size:12px; }
+  .hero { min-height:500px; padding:55px 6%; }
+  .section { padding:55px 5%; }
+  .product-grid { grid-template-columns:1fr; }
+  .product-photo { height:300px; }
+  .trustbar { grid-template-columns:repeat(2,1fr); }
+  .about-grid { grid-template-columns:1fr; gap:25px; }
+  .about-image { height:300px; }
+  .gallery { grid-template-columns:1fr; }
+  .gallery img { height:260px; }
+  .contact-grid { grid-template-columns:1fr; }
 }
 </style>
 </head>
+
 <body>
 
-<div class="topbar">RAYYAN HONEY CENTER · SWAT, PAKISTAN</div>
+<div class="topline">
+  <span>📍 Swat, Pakistan</span>
+  <span>☎ 0300 2400945</span>
+  <span>☎ +92 343 4497369</span>
+  <span>🍯 Natural Honey Collection</span>
+</div>
 
 <header>
-  <div class="logo">RAYYAN <span>HONEY</span></div>
+  <a href="#home" class="brand">RAYYAN <span>HONEY CENTER</span></a>
   <nav>
     <a href="#home">Home</a>
-    <a href="#products">Our Honey</a>
+    <a href="#honey">Our Honey</a>
     <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
+    <a href="#honey" class="btn">Order Now ↓</a>
   </nav>
 </header>
 
 <section class="hero" id="home">
-  <div class="hero-content">
-    <div class="eyebrow">Nature's Golden Treasure</div>
-    <h1>A Taste of <span>Pure Nature</span></h1>
+  <div class="hero-inner">
+    <div class="kicker">From Swat, Pakistan</div>
+    <h1>Nature's Gift<br>of <span>Golden Honey</span></h1>
     <p>
-      Discover our honey collection, from creamy White Honey to rich
-      Black Honey and naturally golden varieties. Contact us to place your order.
+      Welcome to Rayyan Honey Center. Explore our honey varieties,
+      view our collection and contact our team to confirm prices and availability.
     </p>
-    <a class="btn btn-gold" href="#products">EXPLORE OUR HONEY</a>
-    <a class="btn btn-light" href="#contact">CONTACT US</a>
+    <a class="btn" href="#honey">🛒 Explore Honey</a>
+    <a class="btn btn-green" href="#contact">Contact Our Team</a>
   </div>
 </section>
 
-<section class="section" id="products">
-  <div class="section-heading">
-    <small>Our Collection</small>
-    <h2>Choose Your Honey</h2>
-    <p>Explore our varieties and contact us for orders and availability.</p>
+<div class="trustbar">
+  <div class="trust-item"><b>🍯 HONEY COLLECTION</b><span>Different varieties</span></div>
+  <div class="trust-item"><b>🌲 SWAT, PAKISTAN</b><span>Our local identity</span></div>
+  <div class="trust-item"><b>💬 DIRECT CONTACT</b><span>WhatsApp orders</span></div>
+  <div class="trust-item"><b>📦 ORDER ENQUIRIES</b><span>Ask before ordering</span></div>
+</div>
+
+<section class="section" id="honey">
+  <div class="section-head">
+    <small>OUR HONEY COLLECTION</small>
+    <h2>Discover Our Honey</h2>
+    <p>Choose your preferred variety and message us to place an order.</p>
   </div>
 
-  <div class="products">
+  <div class="product-grid">
 
     <article class="product">
-      <div class="product-image">
+      <div class="product-photo">
         <img
-          src="https://raheeq.app/uploads/images/categories/kLvqyEI7fUvVSAG77196431773237602_7038261.png"
-          alt="White honey in a glass jar"
-          loading="lazy"
-          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80';">
+          src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85"
+          alt="Honey jar with golden honey"
+          loading="lazy">
       </div>
-      <div class="product-info">
+      <div class="product-body">
+        <span class="tag">OUR COLLECTION</span>
         <h3>White Honey</h3>
-        <p>A pale, creamy-looking honey variety.</p>
+        <p>Explore our White Honey variety. Ask us about current availability.</p>
         <div class="price">Rs. 10,500 <small>/ kg</small></div>
-        <a class="order-btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20White%20Honey." target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20White%20Honey." target="_blank" rel="noopener">🛒 Order Now</a>
+        <a class="btn-secondary" href="https://wa.me/923434497369?text=Please%20share%20details%20about%20White%20Honey." target="_blank" rel="noopener">Know More →</a>
       </div>
     </article>
 
     <article class="product">
-      <div class="product-image">
+      <div class="product-photo">
         <img
-          src="https://afghanroots.com/cdn/shop/files/Afghan_Roots_Wild-Black-Honey-_500g.jpg?v=1769186071&width=1200"
-          alt="Dark black honey in a glass jar"
-          loading="lazy"
-          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80';">
+          src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=900&q=85"
+          alt="Honey jars and honeycomb"
+          loading="lazy">
       </div>
-      <div class="product-info">
+      <div class="product-body">
+        <span class="tag">DARK VARIETY</span>
         <h3>Black Honey</h3>
-        <p>A rich, dark honey presentation.</p>
+        <p>Interested in Black Honey? Contact us to ask about the product.</p>
         <div class="price">Rs. 5,500 <small>/ kg</small></div>
-        <a class="order-btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20Black%20Honey." target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20Black%20Honey." target="_blank" rel="noopener">🛒 Order Now</a>
+        <a class="btn-secondary" href="https://wa.me/923434497369?text=Please%20share%20details%20about%20Black%20Honey." target="_blank" rel="noopener">Know More →</a>
       </div>
     </article>
 
     <article class="product">
-      <div class="product-image">
+      <div class="product-photo">
         <img
-          src="https://media.naheed.pk/catalog/product/cache/2f2d0cb0c5f92580479e8350be94f387/1/2/1244429-1.jpg"
-          alt="Honey jar product photograph"
-          loading="lazy"
-          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80';">
+          src="https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?auto=format&fit=crop&w=900&q=85"
+          alt="Natural food and honey product"
+          loading="lazy">
       </div>
-      <div class="product-info">
+      <div class="product-body">
+        <span class="tag">SPECIAL VARIETY</span>
         <h3>Param Honey</h3>
-        <p>Ask us about this variety and its availability.</p>
+        <p>Ask our team about Param Honey, its origin and availability.</p>
         <div class="price">Rs. 1,000 <small>/ kg</small></div>
-        <a class="order-btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20Param%20Honey." target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20Param%20Honey." target="_blank" rel="noopener">🛒 Order Now</a>
+        <a class="btn-secondary" href="https://wa.me/923434497369?text=Please%20share%20details%20about%20Param%20Honey." target="_blank" rel="noopener">Know More →</a>
       </div>
     </article>
 
     <article class="product">
-      <div class="product-image">
+      <div class="product-photo">
         <img
-          src="https://cdn.agroklub.com/upload/images/text/med-u-standardizovanoj-tegli-krajem-leta.jpg"
-          alt="Golden honey in a glass jar"
-          loading="lazy"
-          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80';">
+          src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85&sat=35"
+          alt="Golden honey in a jar"
+          loading="lazy">
       </div>
-      <div class="product-info">
+      <div class="product-body">
+        <span class="tag">GOLDEN VARIETY</span>
         <h3>Original Honey</h3>
-        <p>A classic golden honey presentation.</p>
+        <p>Contact us to confirm the current stock and product details.</p>
         <div class="price">Rs. 7,500 <small>/ kg</small></div>
-        <a class="order-btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20Original%20Honey." target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn" href="https://wa.me/923002400945?text=Assalam-o-Alaikum%2C%20I%20want%20to%20order%20Original%20Honey." target="_blank" rel="noopener">🛒 Order Now</a>
+        <a class="btn-secondary" href="https://wa.me/923434497369?text=Please%20share%20details%20about%20Original%20Honey." target="_blank" rel="noopener">Know More →</a>
       </div>
     </article>
 
   </div>
+
+  <p class="note">
+    Product images are illustrative internet images and may not show the exact honey
+    sold by the center. Replace them with your own product photos for accurate presentation.
+    Confirm prices and availability before publishing.
+  </p>
 </section>
 
-<section class="quality">
-  <div class="quality-item">
-    <div class="symbol">✦</div>
-    <h3>Our Honey Collection</h3>
-    <p>Different honey varieties in one place.</p>
-  </div>
-  <div class="quality-item">
-    <div class="symbol">⌂</div>
-    <h3>Swat, Pakistan</h3>
-    <p>Contact our team for local order details.</p>
-  </div>
-  <div class="quality-item">
-    <div class="symbol">☎</div>
-    <h3>Direct Contact</h3>
-    <p>Talk to us through WhatsApp to ask questions or order.</p>
+<section class="jungle-band">
+  <div class="jungle-content">
+    <div class="kicker">Nature • Forest • Swat</div>
+    <h2>Inspired by the Beauty of Swat</h2>
+    <p>
+      Swat is known for its beautiful mountains and forests. Our website celebrates
+      this natural setting while showcasing the honey varieties available at
+      Rayyan Honey Center.
+    </p>
+    <a href="#gallery" class="btn">Explore Gallery →</a>
   </div>
 </section>
 
 <section class="section" id="about">
-  <div class="about">
-    <div class="about-photo" role="img" aria-label="Honey and nature themed background"></div>
-    <div class="about-text">
-      <small style="color:#b17b2d;letter-spacing:3px;font-weight:bold;">ABOUT OUR CENTER</small>
-      <h2>Welcome to Rayyan Honey Center</h2>
+  <div class="about-grid">
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?auto=format&fit=crop&w=1000&q=85"
+        alt="Portrait photograph for a team section"
+        loading="lazy">
+    </div>
+    <div class="about-copy">
+      <div class="kicker">WELCOME TO OUR CENTER</div>
+      <h2>Rayyan Honey Center</h2>
       <p>
-        We offer a collection of honey varieties for customers who want to
-        explore different choices. Get in touch with us to confirm current
-        availability, quantity and price before placing your order.
+        We welcome customers who want to explore different honey varieties.
+        Our team can help with product enquiries, current prices and ordering details.
       </p>
-      <a class="btn btn-gold" style="background:#3b6c43;color:white;" href="#contact">GET IN TOUCH</a>
+      <p>
+        For the most accurate product information, please message us directly.
+        You can also send your questions and ask for real product photographs before ordering.
+      </p>
+      <a href="#contact" class="btn btn-green">Talk to Our Team →</a>
     </div>
   </div>
 </section>
 
-<section class="section contact" id="contact">
-  <div class="section-heading">
-    <small>We're Here to Help</small>
-    <h2>Contact Our Team</h2>
-    <p>For orders, prices and availability, message us on WhatsApp.</p>
+<section class="section" id="gallery">
+  <div class="section-head">
+    <small>VISUAL COLLECTION</small>
+    <h2>Honey & Nature Gallery</h2>
+    <p>Honey, forest and nature-inspired photographs.</p>
   </div>
-  <div class="contacts">
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=900&q=85" alt="Honey jars" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85" alt="Green forest" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85" alt="Honey product" loading="lazy">
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="section-head">
+    <small>WE ARE HERE TO HELP</small>
+    <h2>Order or Ask a Question</h2>
+    <p>Choose a contact below to open WhatsApp and message our team.</p>
+  </div>
+  <div class="contact-grid">
     <div class="contact-card">
+      <div class="avatar">MA</div>
       <h3>Muhammad Ayaz</h3>
       <p>0300 2400945</p>
-      <a href="https://wa.me/923002400945" target="_blank" rel="noopener">WhatsApp Ayaz</a>
+      <a class="btn btn-green" href="https://wa.me/923002400945" target="_blank" rel="noopener">WhatsApp Ayaz</a>
     </div>
     <div class="contact-card">
+      <div class="avatar">MZ</div>
       <h3>Muhammad Zaid</h3>
       <p>+92 343 4497369</p>
-      <a href="https://wa.me/923434497369" target="_blank" rel="noopener">WhatsApp Zaid</a>
+      <a class="btn btn-green" href="https://wa.me/923434497369" target="_blank" rel="noopener">WhatsApp Zaid</a>
     </div>
   </div>
 </section>
@@ -424,10 +537,11 @@ footer {
 <footer>
   <strong>RAYYAN HONEY CENTER</strong><br>
   Swat, Pakistan<br>
+  Pure Honey Collection · Direct WhatsApp Enquiries<br>
   © <span id="year"></span> Rayyan Honey Center. All rights reserved.
 </footer>
 
-<a class="floating-whatsapp" href="https://wa.me/923002400945" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">WhatsApp Us</a>
+<a class="wa-float" href="https://wa.me/923002400945" target="_blank" rel="noopener">☘ WhatsApp Us</a>
 
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -435,4 +549,3 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
-
